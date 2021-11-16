@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Poke-API</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://http2.mlstatic.com/D_NQ_NP_630007-MLB31850372372_082019-O.jpg">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./pokedex.js"></script>
+</head>
+
+<body>
+    <section class="search">
+        <div class="border_black">
+            <div class="shadow_white_padrao">
+                <label>Pesquisa:</label>
+                <input id="nomeDoPokemon" type=" text ">
+            </div>
+            <div>
+                <button onclick="buscar_pokemon()" class="btn_buscar">Buscar Pokemon</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="result">
+        <div class="pokedex border_black">
+            <div>
+                <div class="botao_redondo_blue"></div>
+                <div class="visor border_black">
+                    <img id="imagemDoPokemon">
+                </div>
+                <div>
+                    <label class="shadow_white_padrao">Nome:</label>
+                    <label class="style_infoPoke" id="nomePokemon"></label>
+                </div>
+                <div>
+                    <label class="shadow_white_padrao">Tipo:</label>
+                    <label class="style_infoPoke" id="tipoPokemon"></label>
+                </div>
+                <div>
+                    <label class="shadow_white_padrao">Skills:</label>
+                    <div class="config_moves_border_side">
+                        <div class="config_moves">
+                            <label class="style_infoPoke" id="movesPokemon"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="botoes_enfeite">
+                    <div class="botao_redondo border_black"></div>
+                    <div class="displey_verde border_black"></div>
+                    <div class="botao_mais"><a target="_blank" href="https://bongo.cat/">+</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
